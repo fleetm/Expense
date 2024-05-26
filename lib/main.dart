@@ -7,10 +7,12 @@ void main() {
     debugShowCheckedModeBanner: false,
     home: const HomeView(),
     theme: ThemeData(
-      colorScheme: const ColorScheme.light(
+      colorScheme: ColorScheme.light(
         primary: AppColors.kPrime,
         secondary: AppColors.ksecoundry,
-        background: AppColors.kthird,
+        tertiary: AppColors.kthird,
+        background: Colors.grey.shade100,
+        outline: Colors.grey,
       ),
       backgroundColor: Colors.grey.shade100,
       textTheme: TextTheme(

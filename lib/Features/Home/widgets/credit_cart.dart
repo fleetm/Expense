@@ -26,6 +26,7 @@ class CreditCard extends StatelessWidget {
       ),
       child: Column(
         children: [
+          const Gap(20),
           const Text(
             'Total Balance',
             style: TextStyle(

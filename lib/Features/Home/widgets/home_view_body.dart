@@ -1,6 +1,8 @@
 import 'package:expenses/Features/Home/widgets/Custom_app_bar.dart';
+import 'package:expenses/Features/Home/widgets/credit_cart.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 
 class HomeScreenBody extends StatelessWidget {
   const HomeScreenBody({super.key});
@@ -13,6 +15,8 @@ class HomeScreenBody extends StatelessWidget {
         child: Column(
           children: [
             CustomAppBar(),
+            Gap(20),
+            CreditCard(),
           ],
         ),
       ),

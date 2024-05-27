@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class Customnavbar extends StatelessWidget {
   const Customnavbar({super.key});
@@ -11,6 +12,18 @@ class Customnavbar extends StatelessWidget {
         top: Radius.circular(30),
       ),
       child: BottomNavigationBar(
+        onTap: (value) {
+          //1 right
+          //0 left
+          switch (value) {
+            case 0:
+              GoRouter.of(context).go('/');
+              break;
+            case 1:
+              GoRouter.of(context).go('/expense');
+              break;
+          }
+        },
         backgroundColor: Colors.white,
         showSelectedLabels: false,
         showUnselectedLabels: false,

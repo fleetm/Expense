@@ -1,11 +1,12 @@
-import 'package:expenses/Features/Home/home_view.dart';
+import 'package:expenses/core/app_router.dart';
 import 'package:expenses/core/cons.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MaterialApp(
+  runApp(MaterialApp.router(
+    routerConfig: AppRouter.router,
     debugShowCheckedModeBanner: false,
-    home: const HomeView(),
+    // home: const HomeView(),
     theme: ThemeData(
       colorScheme: ColorScheme.light(
         primary: AppColors.kPrime,

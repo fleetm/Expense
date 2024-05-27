@@ -1,18 +1,17 @@
 import 'package:expenses/Features/Home/widgets/customnav_bar.dart';
-import 'package:expenses/Features/Home/widgets/home_view_body.dart';
+import 'package:expenses/Features/expense/widgets/expense_view_body.dart';
 import 'package:expenses/core/cons.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class HomeView extends StatelessWidget {
-  const HomeView({super.key});
+class ExpenseView extends StatelessWidget {
+  const ExpenseView({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: const HomeScreenBody(),
-      //appBar: AppBar(),
-      bottomNavigationBar: Customnavbar(),
+      body: const ExpensViewBody(),
+      bottomNavigationBar: const Customnavbar(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: RawMaterialButton(
         onPressed: () {},
